@@ -6,21 +6,21 @@ function getComputerChoice() {
 
 console.log("Computer:", getComputerChoice());
 
-function getHumanChoice() {
-  humanChoice = prompt("Rock, Paper, or Scissors?");
-  humanChoice = humanChoice.toLowerCase();
-  if (
-    humanChoice === "rock" ||
-    humanChoice === "paper" ||
-    humanChoice === "scissors"
-  ) {
-    return humanChoice;
-  } else if (humanChoice === null || humanChoice === "") {
-    return "Invalid choice. Please try again.";
-  } else {
-    alert("Error!");
-  }
-}
+// function getHumanChoice() {
+//   humanChoice = prompt("Rock, Paper, or Scissors?");
+//   humanChoice = humanChoice.toLowerCase();
+//   if (
+//     humanChoice === "rock" ||
+//     humanChoice === "paper" ||
+//     humanChoice === "scissors"
+//   ) {
+//     return humanChoice;
+//   } else if (humanChoice === null || humanChoice === "") {
+//     return "Invalid choice. Please try again.";
+//   } else {
+//     alert("Error!");
+//   }
+// }
 
 console.log("Human:", getHumanChoice());
 

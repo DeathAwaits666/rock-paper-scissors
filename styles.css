@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons > button:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.title {
+  color: #ff6600;
+  display: flex;
+  margin: 10vh;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Helvetica, sans-serif;
+  position: relative;
+  background-color: #222222;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.result {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.score,
+h1 {
+  color: #ff6600;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.total-plays {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 190px;
+  width: 60%;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ff7112;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 3.7px 2px #720000;
+  color: #000000;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: box-shadow 1ms ease-in-out;
+  transition: transform ease 100ms;
+  width: 109px;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+button.clear {
+  background-color: transparent;
+  border: 2px solid #ff6600;
+  color: #ffffff;
+}
+
+footer {
+  font-family: Poppins, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  align-items: center;
+  bottom: 0px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: #ff6600 0px -0.5px 3px;
+}
+
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #ff6600;
+}
