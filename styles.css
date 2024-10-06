@@ -44,7 +44,25 @@ body {
   width: 100%;
 }
 
+.game-info {
+  display: flex;
+  color: #ff6600;
+  margin: 40px;
+}
+
+.rounds-input {
+  color: #ff6600;
+  margin: 40px;
+}
+
 .score,
+h2 {
+  color: #ff6600;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 h1 {
   color: #ff6600;
   font-size: 2rem;
@@ -94,7 +112,7 @@ button:active {
   transform: translateY(5px);
 }
 
-button.clear {
+button#clear {
   background-color: transparent;
   border: 2px solid #ff6600;
   color: #ffffff;

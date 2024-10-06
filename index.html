@@ -18,16 +18,37 @@
   <body>
     <div class="main-container">
       <div class="results">
-        <h1 style="max-width: 350px; padding: 0.4rem 0.8rem; border-radius: 4px; box-shadow: none;">Rock, Paper, Scissors?</h1>
-      <h2 class="score">0 : 0</h2>
-      <div class="buttons">
-        <button class="rock" type="button">Rock</button>
-        <button class="paper" type="button">Paper</button>
-        <button class="sciss#ors" type="button">Scissors</button>
-        <button class="clear" type="button">Restart</button>
+        <h1>Rock, Paper, Scissors?</h1>
+
+        <!-- Number of rounds input -->
+        <div class="rounds-input">
+          <label for="rounds">Number of Rounds:</label>
+          <input
+            type="number"
+            id="rounds"
+            placeholder="Enter how many rounds"
+          />
+          <button id="start-game">Start Game</button>
+        </div>
+
+        <!-- Displaying scores and results -->
+        <h2 class="score">0 : 0</h2>
+        <div class="game-info">
+          <p id="round-result"></p>
+          <!-- Round result -->
+          <p id="final-result"></p>
+          <!-- Final game result -->
+        </div>
+
+        <!-- Game buttons for choices -->
+        <div class="buttons">
+          <button id="rock" type="button" disabled>Rock</button>
+          <button id="paper" type="button" disabled>Paper</button>
+          <button id="scissors" type="button" disabled>Scissors</button>
+          <button id="clear" type="button">Restart</button>
+        </div>
       </div>
     </div>
-
     <footer>
       <a href="https://github.com/DeathAwaits666/rock-paper-scissors"
         >By DeathAwaits <i class="fa solid fa-github"></i
