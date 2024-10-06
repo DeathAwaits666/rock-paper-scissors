@@ -4,139 +4,106 @@
   padding: 0;
 }
 
-.buttons > button:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.title {
-  color: #ff6600;
-  display: flex;
-  margin: 10vh;
-}
-
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Poppins, Helvetica, sans-serif;
-  position: relative;
-  background-color: #222222;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(7, 30, 61); /* Dark background */
+  color: #21e6c1; /* Bright cyan for text */
   min-height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-container {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  min-height: 100vh;
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-}
-
-.result {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-.game-info {
-  display: flex;
-  color: #ff6600;
-  margin: 40px;
-}
-
-.rounds-input {
-  color: #ff6600;
-  margin: 40px;
-}
-
-.score,
-h2 {
-  color: #ff6600;
-  font-size: 5rem;
-  font-weight: 500;
+  background-color: rgba(
+    7,
+    30,
+    61,
+    0.8
+  ); /* Dark container with slight transparency */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   text-align: center;
+  width: 90%;
+  max-width: 600px;
 }
 
 h1 {
-  color: #ff6600;
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2); /* Soft white shadow for better visibility */
+  color: #21e6c1; /* Bright cyan heading */
 }
 
-.total-plays {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  max-width: 190px;
-  width: 60%;
+.rounds-input {
+  margin: 20px 0;
 }
 
-.buttons {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+::placeholder {
+  color: #ffffff;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  max-width: 200px;
+  font-size: 1rem;
+  color: #21e6c1; /* Bright cyan input text */
+  background-color: rgba(0, 16, 37, 0.9); /* Dark background for input */
+  margin-right: 10px;
 }
 
 button {
   cursor: pointer;
-  background-color: #ff7112;
+  background-color: #21e6c1; /* Bright cyan button background */
   border: none;
-  border-radius: 2px;
-  box-shadow: 0px 3.7px 2px #720000;
-  color: #000000;
-  cursor: pointer;
-  font-size: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 3.7px 2px #278ea5;
+  color: #ffffff; /* White text */
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.08rem;
-  outline: none;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  transition: box-shadow 1ms ease-in-out;
-  transition: transform ease 100ms;
-  width: 109px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  transition: transform 0.1s;
 }
 
 button:active {
-  box-shadow: none;
-  transform: translateY(5px);
+  transform: translateY(2px);
 }
 
-button#clear {
+#clear {
   background-color: transparent;
-  border: 2px solid #ff6600;
-  color: #ffffff;
+  border: solid 1px #21e6c1;
+}
+
+.game-info {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #21e6c1; /* Bright cyan border */
+  border-radius: 10px;
+  background-color: rgba(7, 30, 61, 0.9); /* Slightly lighter dark background */
+}
+
+.score {
+  font-size: 3rem;
 }
 
 footer {
-  font-family: Poppins, Helvetica, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  align-items: center;
-  bottom: 0px;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  box-shadow: #ff6600 0px -0.5px 3px;
+  margin-top: 20px;
+  color: #ffffff; /* White text for footer */
+  text-align: center;
 }
 
-a:active,
-a:link,
-a:visited {
+footer a {
   text-decoration: none;
-  color: #ff6600;
+  color: #21e6c1; /* Bright cyan link color */
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff; /* White on hover */
 }

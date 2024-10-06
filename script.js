@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const restartButton = document.getElementById("clear");
   const roundsInput = document.getElementById("rounds");
   const startGameButton = document.getElementById("start-game");
+  const gameMessageDisplay = document.getElementById("game-message");
 
   // New elements for displaying round result and final result
   const roundResultDisplay = document.getElementById("round-result");
@@ -116,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       finalResultDisplay.textContent = "Please enter a valid number of rounds.";
       return;
     }
+
     currentRound = 0;
     playerScore = 0;
     computerScore = 0;
@@ -123,8 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
     roundResultDisplay.textContent = ""; // Clear previous round results
     finalResultDisplay.textContent = ""; // Clear previous final results
     enableButtons(); // Enable the game buttons once the game starts
-  }
 
+    // Show a message indicating the game has started
+    gameMessageDisplay.textContent = `Game started! Best of ${rounds} rounds. Good luck!`;
+  }
   // Add event listener to the start game button
   startGameButton.addEventListener("click", startGame);
 
@@ -135,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreDisplay.textContent = "0 : 0";
     roundResultDisplay.textContent = ""; // Clear the round result
     finalResultDisplay.textContent = ""; // Clear the final result
+    gameMessageDisplay.textContent = ""; // Clear the game message
   }
 
   // Add event listener to the restart button
